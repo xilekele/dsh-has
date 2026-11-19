@@ -1,0 +1,44 @@
+{
+  "name": "dsh-has",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "On-device reversible anonymization (HaS) for DeepSeek Harness: scan, hide and restore sensitive entities without sending text anywhere.",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "icon": "./icon.svg",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "files": [
+    "index.js",
+    "lib/",
+    "locale/",
+    "docs/",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node test/smoke.mjs && node test/apply.mjs",
+    "test:tools": "node test/tools.mjs",
+    "test:integration": "node test/integration.mjs",
+    "test:roundtrip": "node test/roundtrip.mjs",
+    "test:docx": "node test/docx.mjs",
+    "test:docx-tools": "node test/docx-tools.mjs",
+    "test:pdf": "node test/pdf.mjs",
+    "test:pdf-tools": "node test/pdf-tools.mjs",
+    "test:pdf-text": "node test/pdf-text-hide.mjs",
+    "test:long": "node test/long.mjs"
+  }
+}

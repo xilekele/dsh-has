@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "HaS Local Anonymizer",
+    "description": "Scan, hide and restore sensitive entities fully on-device. Text is anonymized with reversible tags before it reaches a remote model, and restored afterwards from a local mapping file.",
+    "detail": "./docs/usage.md"
+  }
+}

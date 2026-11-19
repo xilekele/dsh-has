@@ -1,0 +1,10 @@
+- insert:
+    - id: dsh-has
+      name: dsh-has
+      config:
+        maxParallelRequests: 4
+        contextPerSlot: 8192
+        maxChunkTokens: 3000
+        scanMaxChunkTokens: 5000
+        toolPair: true
+        idleTimeoutMs: 1800000
